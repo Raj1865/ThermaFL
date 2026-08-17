@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322635919765",
+    "project_id": "thermafl",
+    "storage_bucket": "thermafl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322635919765:android:e2ad74043139180bf6869c",
+        "android_client_info": {
+          "package_name": "com.example.thermafl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC5TUUWXjiRXvpIOTugozDuaLxKs2mpts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
