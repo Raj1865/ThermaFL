@@ -196,8 +196,6 @@ public class TelemetryService extends Service {
                     updates.put("battery_temp", currentTemp);
                     updates.put("battery_pct", batteryPct);
                     updates.put("free_ram_mb", availableRam);
-                    updates.put("status", currentStatus);
-                    updates.put("alpha_multiplier", currentAlpha);
                     updates.put("last_updated", System.currentTimeMillis());
 
                     databaseReference.updateChildren(updates)
