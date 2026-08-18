@@ -128,6 +128,19 @@ public class TelemetryService extends Service {
                     serverIntent.putExtra("status", status);
                 }
                 sendBroadcast(serverIntent);
+
+                // Also notify TrainingService about alpha changes
+                Intent alphaIntent = new Intent("ALPHA_UPDATE");
+                alphaIntent.setPackage(getPackageName());
+                if (alphaObj != null) {
+                    try {
+                        alphaIntent.putExtra("alpha", Double.parseDouble(alphaObj.toString()));
+                    } catch (NumberFormatException ignored) {}
+                }
+                if (status != null) {
+                    alphaIntent.putExtra("status", status);
+                }
+                sendBroadcast(alphaIntent);
             }
 
             @Override

@@ -35,6 +35,10 @@
             android:foregroundServiceType="dataSync"
             android:exported="false" />
 
+        <service
+            android:name=".TrainingService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
 
     </application>
 

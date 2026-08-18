@@ -32,6 +32,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    // Prevent AAPT from compressing the TFLite model — compressed assets
+    // cannot be memory-mapped, which crashes Interpreter(loadModelFile())
+    aaptOptions {
+        noCompress += "tflite"
+    }
 }
 
 dependencies {
